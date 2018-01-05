@@ -1,7 +1,7 @@
 const router = require('express').Router()
 const {User} = require('../db/models')
 module.exports = router
-
+const {analyzeEntitiesOfText} = require('./analyzeEnt')
 router.get('/', (req, res, next) => {
   User.findAll({
     // explicitly select only the id and email fields - even though
@@ -12,3 +12,5 @@ router.get('/', (req, res, next) => {
     .then(users => res.json(users))
     .catch(next)
 })
+analyzeEntitiesOfText('obama is cool')
+router.post('/')

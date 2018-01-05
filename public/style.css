@@ -1,13 +1,64 @@
+* {
+  box-sizing: border-box
+}
+
 body {
-  font-family: sans-serif;
+  font-family: olde-english;
+}
+@font-face {
+  font-family: "Ancient";
+  src: url("./OldeEnglish.ttf");
+}
+
+h1 {
+  font-family: OldeEnglish;
+  font-size: 500%;
+}
+hr {
+  border: 0;
+  height: 1.2px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+.header {
+  width: 940px;
+}
+
+.filterName {
+  padding-top: 10px;
+}
+
+.smiley {
+  padding-top: 15px;
+}
+
+.divider {
+  margin-top: 0;
+}
+
+.about {
+  text-align: justify
 }
 
 a {
+  color: black;
   text-decoration: none;
 }
 
 label {
   display: block;
+}
+
+img {
+  padding-bottom: 10px;
+}
+
+.newsfeed {
+  height: 450px;
+  overflow-y: scroll;
 }
 
 nav a {
